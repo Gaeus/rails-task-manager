@@ -1,0 +1,8 @@
+<h2><%= @task.title %></h2>
+<p><%= @task.details %></p>
+<h5><%= link_to "Modifier",  edit_path  %></h5>
+<h5><%= link_to "Effacer", task_path(@task), data: {turbo_method: :delete, turbo_confirm: "Es-tu certain?"} %></h5>
+<h5><%= link_to "Revenir à la liste",  tasks_path  %></h5>
+
+
+<%# ligne 5 enlever le @ si ca bug %>
